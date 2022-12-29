@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://park-guide-site.onrender.com/'
+    origins '*'
 
     resource '*',
       headers: :any,
